@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nazwa.pl</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/efe1cde7b5.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<nav class="nav container">
+				<div class="nav__left">
+					<img src="./assets//header/logo.png" alt="logo nazwa.pl" />
+				</div>
+				<div class="nav__middle">
+					<ul>
+						<li><a href="#">Domeny</a></li>
+						<li><a href="#">Hosting</a></li>
+						<li><a href="#">Certyfikaty SSL</a></li>
+						<li><a href="#">Serwery VPS</a></li>
+						<li><a href="#">O nas</a></li>
+					</ul>
+				</div>
+				<div class="nav__right">
+					<ul>
+						<li class="nav__burger">
+							<i class="fa-solid fa-bars"></i>
+						</li>
+						<li>
+							<a href=""
+								><img
+									src="./assets/header/pk.png"
+									alt="ikona użytkownika"
+							/></a>
+						</li>
+						<li>
+							<a href=""
+								><img
+									src="./assets/header/mail.png"
+									alt="ikona maila"
+							/></a>
+						</li>
+						<li>
+							<a href=""
+								><img
+									src="./assets/header/note.png"
+									alt="ikona notatnika"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- Section 1 -->
+			<section class="section1">
+				<div class="section1__container container">
+					<div class="section1__contentBox">
+						<h1 class="section1__contentBox-heading">
+							Najlepszy hosting na start!
+						</h1>
+						<div class="section1__contentBox-searchBox">
+							<span
+								class="section1__contentBox-searchBox-searchIcon"
+							>
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</span>
+							<input
+								type="text"
+								placeholder="Wpisz wyszukiwaną frazę..."
+							/>
+							<button type="button">wyszukaj</button>
+						</div>
+						<div class="section1__contentBox-prices">
+							<p>Promocja:&nbsp;</p>
+							<p>pl - <span id="pricePl">5</span> PLN/rok |</p>
+							<p>
+								&nbsp;eu -
+								<span id="priceEu">5</span> PLN/rok |
+							</p>
+							<p>
+								&nbsp;com -
+								<span id="priceCom">40</span> PLN/rok
+							</p>
+						</div>
+					</div>
+					<div class="section1__info">
+						<div class="section1__info-box">
+							<h2>CloudHosting Start</h2>
+							<p
+								class="section1__info-box--price"
+								id="priceValue"
+							>
+								100 PLN
+							</p>
+							<div class="section1__info-box--parameter">
+								<p>Pojemność</p>
+								<p>100GB</p>
+							</div>
+							<div class="section1__info-box--parameter">
+								<p class="section1__info-box--parameter-power">
+									Moc obliczeniowa
+								</p>
+								<p class="section1__info-box--parameter-value">
+									4 vCPU (20GHz)
+								</p>
+							</div>
+							<div class="section1__info-box--parameter">
+								<p>Pamięć RAM</p>
+								<p>8 GB</p>
+							</div>
+							<div class="section1__info-box--parameter">
+								<p>CDN nazwa.pl</p>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<div class="section1__info-box--parameter">
+								<p>PHP, Node.js</p>
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<button type="button" id="questionButton">
+								Zamawiam
+							</button>
+						</div>
+						<div class="section1__info-switcher">
+							<p>Netto</p>
+							<label class="section1__info-switcher--switch">
+								<input type="checkbox" id="toggleSwitch" />
+								<span class="slider"></span>
+							</label>
+							<p>Brutto</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Section 2 -->
+			<section class="section2 container">
+				<div class="section2__photo">
+					<img
+						src="./assets//s2-img.png"
+						alt="mężczyzna na tle pokoju biurowego z ludzmi pracjącymi na komputerach"
+					/>
+				</div>
+				<div class="section2__description container">
+					<h2>Hosting w chmurze z CDN nazwa.pl</h2>
+					<div class="section2__description-orangeLine"></div>
+					<p class="section2__description-text">
+						CloudingHosting, czyli hosting w chmurze, to nowoczesne
+						rozwiązanie, przewyszające tradycyjny hosting, w którym
+						strona WWW obsługiwana jest jedynie na pojedynczym
+						serwerze. Hosting w chmurze oferuje większą szybkość
+						działania, skalowalność zasobów oraz rekcję na awarie w
+						ułamkach sekund. na hostingu w chmurze każda strona WWW
+						obsługiwana jest jednocześnie w klastrach składających
+						się z setek serwerów, dzięki czemu niezależnie od pory
+						dnia i nocy wszystkie serwisy WWW działają z maksymalnie
+						możliwą szybkością
+					</p>
+					<p class="section2__description-text">
+						Strony internetowe korzystające z buforowania statyczych
+						plików w ramach CDN nazwa.pl działają znacznie szybciej
+						niż strony niewykorzystujące tej technologii. Serwery
+						buforujące zlokalizowane są w kluczowych dla ruchu
+						internetowego miastach na świecie, zapewniając dostęp do
+						elementów strony WWW z najbliższego geograficznie
+						miejsca
+					</p>
+					<div class="section2__description-buttonBox">
+						<a href="#products"> <button>Zamów</button></a>
+					</div>
+				</div>
+			</section>
+			<!-- Section 3 -->
+			<section class="section3" id="testim">
+				<h2 class="section3__title">Opinie naszych Klientów</h2>
+				<div class="section3__orangeLine"></div>
+				<div class="section3__thumb">
+					<img src="./assets//stars2.png" alt="" />
+				</div>
+				<div class="section3__wrap">
+					<span
+						id="right-arrow"
+						class="section3__wrap-arrow right fa fa-chevron-right"
+					></span>
+					<span
+						id="left-arrow"
+						class="section3__wrap-arrow left fa fa-chevron-left"
+					></span>
+					<ul class="section3__wrap-dots" id="testim-dots">
+						<li class="dot active"></li>
+						<li class="dot"></li>
+						<li class="dot"></li>
+					</ul>
+					<div class="section3__wrap-cont" id="testim-content">
+						<div class="active">
+							<p>
+								Korzystam z usług nazwa.pl od 17 lat, to chyba
+								dobrze o nich świadczy. Próbowałem korzystać z
+								oferty konkurencji, często tańszych, ale jednak
+								od 17 lat pozostaję z nazwa.pl. Oferta, jakość,
+								panel administracyjny, obsługa klienta - to
+								wszystko zebrane razem powoduje, że są najlepsi
+								na rynku.
+							</p>
+							<h2>Jan Kowalski, Firma Jana Kowalskiego</h2>
+						</div>
+						<div>
+							<p>
+								Korzystam z usług nazwa.pl od wielu lat i jestem
+								bardzo zadowolony. Ich oferta jest niezwykle
+								konkurencyjna, a jakość usług bez zarzutu. Panel
+								administracyjny jest intuicyjny i łatwy w
+								obsłudze, a obsługa klienta zawsze pomocna i
+								profesjonalna. Bez wątpienia są liderem na rynku
+								i jestem niesamowicię zadwolony
+							</p>
+							<h2>Paweł Nowak, Super firma</h2>
+						</div>
+						<div>
+							<p>
+								Korzystam z usług nazwa.pl od kilku lat i jestem
+								bardzo zadowolony. Oferują konkurencyjne cenowo
+								i niezawodne pakiety hostingowe. Obsługa klienta
+								jest profesjonalna i pomocna, a panel
+								administracyjny intuicyjny. Polecam nazwa.pl
+								każdemu, kto szuka solidnego dostawcy usług
+								hostingowych.
+							</p>
+							<h2>Jan Stępień, Uroki Natury</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Section 4 -->
+			<section class="section4 container" id="products">
+				<h2>Wybieraj spośród najnowszych technologii</h2>
+				<div class="section4__orangeLine"></div>
+				<p class="section4__text">
+					Wybierjąc CloudHosting od nazwa.pl otrzymasz dostęp do
+					szeregu przydatnych funkcji i narzędzi, które ułatwią Ci
+					pracę i zaoszczędzą cenny czas. Poniżej przedstawiamy
+					wszystkie oferowane przez nas technologie, które możesz
+					wykorzystać w swoich projektach online. Poznaj je wszystkie!
+				</p>
+				<div class="section4__gridContainer">
+					<div class="section4__gridContainer-gridItem item1">
+						<img
+							src="./assets/technologies/php.png"
+							alt="Logo PHP"
+						/>
+						<p>PHP</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item2">
+						<img
+							src="./assets/technologies/nodejs.png"
+							alt="Logo Node.js"
+						/>
+						<p>Node.js</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item3">
+						<img
+							src="./assets/technologies/mongodb.png"
+							alt="Logo mongoDB"
+						/>
+						<p>mongoDB</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item4">
+						<img
+							src="./assets/technologies/redis.png"
+							alt="Logo Redis"
+						/>
+						<p>Redis</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item5">
+						<img
+							src="./assets/technologies/postgresql.png"
+							alt="Logo postgresSQL"
+						/>
+						<p>postgresSQL</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item6">
+						<img
+							src="./assets/technologies/javascript.png"
+							alt="Logo JavaScript"
+						/>
+						<p>JavaScript</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item7">
+						<img
+							src="./assets/technologies/sass.png"
+							alt="Logo SCSS"
+						/>
+						<p>SCSS</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item8">
+						<img
+							src="./assets/technologies/bootstrap.png"
+							alt="Logo"
+						/>
+						<p>Bootstrap</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item9">
+						<img
+							src="./assets/technologies/memcached.png"
+							alt="Logo Memecached"
+						/>
+						<p>Memecached</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item10">
+						<img
+							src="./assets/technologies/mariadb.png"
+							alt="Logo MariaDB"
+						/>
+						<p>MariaDB</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item11">
+						<img
+							src="./assets/technologies/composer.png"
+							alt="Logo Composter"
+						/>
+						<p>Composter</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item12">
+						<img
+							src="./assets/technologies/wp-cli.png"
+							alt="Logo WP-CLI"
+						/>
+						<p>WP-CLI</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item13">
+						<img
+							src="./assets/technologies/perl.png"
+							alt="Logo Perl"
+						/>
+						<p>Perl</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item14">
+						<img
+							src="./assets/technologies/python.png"
+							alt="Logo Python"
+						/>
+						<p>Python</p>
+					</div>
+					<div class="section4__gridContainer-gridItem item15">
+						<img
+							src="./assets/technologies/lsc.png"
+							alt="Logo LSCache plugins"
+						/>
+						<p>LSCache plugins</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer__top">
+				<div class="footer__top-container">
+					<h3>Dołącz do 1 000 000 zadwolonych Klientów nazwa.pl</h3>
+					<p>
+						Masz hosting lub domene w innej firmię? Przenieśswoje
+						usługi do nazwa.pl
+					</p>
+					<p>i korzystaj z najnowszych technologii.</p>
+					<div>
+						<div class="section2__description-buttonBox">
+							<a
+								href="mailto:kontakt@nazwa.pl"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<button>Skontaktuj się z nami</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-container">
+					<div class="footer__bottom-container--copyright">
+						<p>
+							&copy;<span id="currentYear"></span> nazwa.pl
+							Wszelkie prawa zastrzeżone.
+						</p>
+					</div>
+					<div class="footer__bottom-container--media">
+						<a href="#">
+							<img
+								src="./assets/footer/fb.png"
+								alt="ikonka facebooka"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./assets/footer/ig.png"
+								alt="ikonka instagrama"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./assets/footer/in.png"
+								alt="ikonka linkedin"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Popup Menu -->
+		<div class="popupMenu" id="popupMenu">
+			<div id="closePopup" class="popupMenu__close">
+				<i class="fa-solid fa-xmark"></i>
+			</div>
+			<ul>
+				<li><a href="#">Domeny</a></li>
+				<li><a href="#">Hosting</a></li>
+				<li><a href="#">Certyfikaty SSL</a></li>
+				<li><a href="#">Serwery VPS</a></li>
+				<li><a href="#">O nas</a></li>
+			</ul>
+		</div>
+		<!-- Popup Question -->
+		<div class="popupQuestion" id="questionPopup">
+			<div class="popupQuestion__overlay" id="questionPopupOverlay"></div>
+			<div class="popupQuestion__content">
+				<!-- Dodanie przycisku zamknięcia z ikoną -->
+				<div id="closeQuestion" class="popupQuestion__content-close">
+					<i class="fas fa-times"></i>
+				</div>
+				<p class="popupQuestion__content-title">
+					Kupujesz na firmę czy jako osoba prywatna?
+				</p>
+				<p class="popupQuestion__content-question">
+					Potrzebujemy tej informacji, żeby wyświetlić odpowiednie
+					ceny w Twoim koszyku.
+				</p>
+				<div class="popupQuestion__content-buttonBox">
+					<button id="answerCompany">Firma</button>
+					<button id="answerPrivate">Osoba Prywatna</button>
+				</div>
+			</div>
+		</div>
+		<!-- Confirmation message -->
+		<div id="confirmationMessage" class="confirmationMessage">
+			<p>Usługa został</p>
+			<p>dodany do koszyka.</p>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
